@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Task Tracker App – Documentation
 
-## Getting Started
+## Overview
 
-First, run the development server:
+The Task Tracker App is a simple Next.js application that allows users to manage tasks efficiently. Users can add new tasks, edit existing ones, mark them as completed, and delete tasks. Tasks are stored locally in the browser using **localStorage**, so they remain available even after refreshing the page.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Add new tasks with a title.
+- Edit existing tasks.
+- Delete tasks permanently.
+- Mark tasks as **Completed** or keep them as **Pending**.
+- Filter tasks by **All**, **Completed**, or **Pending**.
+- Data persistence using **localStorage** (no backend required).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Installation & Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/lenard-dumalagan/simple-task-tracker
+   cd simple-task-tracker
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Install dependencies**
 
-## Deploy on Vercel
+   ```bash
+   pnpm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Run the development server**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   pnpm dev
+   ```
+
+4. Open your browser and go to:
+
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## How to Use
+
+1. **Add a Task**
+
+   - Type a task name in the input box.
+   - Click **Add Task** (or press Enter).
+
+2. **Edit a Task**
+
+   - Click the **Edit** button next to a task.
+   - Update the task name and save.
+
+3. **Mark as Completed / Pending**
+
+   - Toggle the checkbox beside a task to mark it as **Completed** or **Pending**.
+
+4. **Delete a Task**
+
+   - Click the **Delete** button to remove the task permanently.
+
+5. **Filter Tasks**
+
+   - Use the filter buttons (**All, Completed, Pending**) to view tasks by status.
+
+---
+
+## Tech Stack
+
+- **Framework:** Next.js
+- **Styling:** Tailwind CSS
+- **State Management:** React useState, useEffect, & zustand
+- **Storage:** Browser localStorage
